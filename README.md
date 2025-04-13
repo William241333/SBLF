@@ -4,7 +4,11 @@
 
 2. RCode: R code for the analysis of model (SBLF) fitting results and model comparison with linear model and voxel-wise model.
 
-The 'main2.c' files is for real data analysis.
+The 'main2.c' files is for real data analysis, you can just run the code in vscode or on terminal.
+
+# to compile the C code on terminal:
+gcc -I/usr/local/include -L/usr/local/lib -lgsl -lgslcblas -lfftw3 -lm main2.c -o model2
+./model2
 
 # Note: 
 1) please specify your own header and library search pathway if they are not found automatically. Here my header and library search pathway are '-I/usr/local/include' and '-L/usr/local/lib', respectively.
